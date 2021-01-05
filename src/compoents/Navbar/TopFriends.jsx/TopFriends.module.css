@@ -1,0 +1,18 @@
+.title {
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper img {
+    margin-right: 0;
+    margin-left: 0;
+    height: 40px;
+    width: 40px;
+}

@@ -1,0 +1,16 @@
+.message {
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.message:nth-child(odd) {
+    margin-right: auto;
+}
+.message:nth-child(even) {
+    margin-left: auto;
+    flex-direction: row-reverse;
+}

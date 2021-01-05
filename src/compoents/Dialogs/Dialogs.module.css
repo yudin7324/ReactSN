@@ -7,6 +7,20 @@
        color: blue; 
 }
 
-.messages {
+.dialogsItems a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
 
+.messages {
+    font-family: 'Poppins', sans-serif;
+    color: #004156;
+    font-size: 14px;
+    background-color: #AEE8E4;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
