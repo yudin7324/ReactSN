@@ -1,0 +1,23 @@
+.item {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.postBtn {
+  margin: 10px;
+  color: #004156;
+  background-color:#00DFC8;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}

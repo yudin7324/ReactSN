@@ -1,0 +1,19 @@
+.nav {
+  background-color: #004156;
+  grid-area: nav;
+  padding: 20px;
+  border-radius: 5px;
+}
+.item {
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.item a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.item a.active{
+  color: #2398AB;
+}
