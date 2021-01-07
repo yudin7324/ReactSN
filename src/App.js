@@ -10,19 +10,23 @@ import Music from "./compoents/Music/Music";
 import Settings from "./compoents/Settings/Settings";
 
 
+// Компонет APP. компонет главной страницы
 function App(props) {
 
+
+  //Переменные для присваивания props чтобы можно было поместить в атрибут render
   let dialogsComponent = () => 
       <Dialogs 
         state={props.state.dialogsPage}
+        store={props.store}
         />;
   let profileComponent = () => 
       <Profile 
         profilePage={props.state.profilePage}
-        addPost={props.addPost}
-        updateNewPostText={props.updateNewPostText}
+        dispatch={props.dispatch}
       />;
 
+  //Тело функции с разметкой главной страницы
   return (
       <div className="app-wrapper">
         <Header />
