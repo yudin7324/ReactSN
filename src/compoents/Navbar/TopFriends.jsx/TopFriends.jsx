@@ -3,10 +3,11 @@ import FriendsItem from "./FriendsItem/FriendsItem";
 import s from "./TopFriends.module.css"
 
 const TopFriends = (props) => {
-
-    let friendsElements = props.friends.map( f =>  
-        <FriendsItem name={f.name} id={f.id}/>
+   
+    let friendsElements = props.state.friends.map( f =>  
+        <FriendsItem name={f.name} id={f.id}/>    
     ); 
+  
     
     return (
         <div>
