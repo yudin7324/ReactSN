@@ -9,6 +9,7 @@ import ProfileContainer from './compoents/Profile/ProfileContainer';
 import DialogsContainer from './compoents/Dialogs/DialogsContainer';
 import UsersContainer from "./compoents/Users/UsersContainer";
 import HeaderContainer from './compoents/Header/HeaderContainer';
+import Login from './compoents/Login/Login';
 
 function App(props) {
     return (
@@ -19,6 +20,7 @@ function App(props) {
                 <Route path="/dialogs" render={() => <DialogsContainer />} />
                 <Route path="/profile/:userId?" render={() => <ProfileContainer />} />
                 <Route path="/users" render={() => <UsersContainer />} />
+                <Route path="/login" render={() => <Login />} />
                 <Route path="/news" render={() => <News />} />
                 <Route path="/music" render={() => <Music />} />
                 <Route path="/settings" render={() => <Settings />} />
