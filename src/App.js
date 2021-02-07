@@ -7,7 +7,7 @@ import Music from './compoents/Music/Music';
 import Settings from './compoents/Settings/Settings';
 import ProfileContainer from './compoents/Profile/ProfileContainer';
 import DialogsContainer from './compoents/Dialogs/DialogsContainer';
-import UsersContainer from "./compoents/Users/UsersContainer";
+import UsersContainer from './compoents/Users/UsersContainer';
 import HeaderContainer from './compoents/Header/HeaderContainer';
 import Login from './compoents/Login/Login';
 import { connect } from 'react-redux';
@@ -15,19 +15,16 @@ import { initializeApp } from './redux/app-reducer';
 import { compose } from 'redux';
 import Preloader from './compoents/common/preloader/preloader';
 
-
-
-
 class App extends Component {
     componentDidMount() {
         this.props.initializeApp();
     }
 
     render() {
-        if(!this.props.initialized) {
-            return <Preloader />
+        if (!this.props.initialized) {
+            return <Preloader />;
         }
-        
+
         return (
             <div className="app-wrapper">
                 <HeaderContainer />
@@ -47,9 +44,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    initialized: state.app.initialized
-})
+    initialized: state.app.initialized,
+});
 
-
-export default compose( withRouter,
-                    connect(mapStateToProps, { initializeApp }))(App);
+export default compose(withRouter, connect(mapStateToProps, { initializeApp }))(App);
